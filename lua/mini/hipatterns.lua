@@ -426,6 +426,10 @@ MiniHipatterns.disable = function(buf_id)
   end
 end
 
+MiniHipatterns.is_buf_enabled = function(buf_id)
+	return H.is_buf_enabled(buf_id)
+end
+
 --- Toggle highlighting in buffer
 ---
 --- Call |MiniHipatterns.disable()| if enabled; |MiniHipatterns.enable()| otherwise.
